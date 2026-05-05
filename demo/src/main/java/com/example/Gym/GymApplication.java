@@ -1,13 +1,15 @@
-package com.example.demo;
+package com.example.Gym;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-public class DemoApplication {
+@EnableJpaRepositories(basePackages = {"com.example.Gym"})
+public class GymApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(GymApplication.class, args);
 	}
 
 }

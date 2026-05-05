@@ -35,3 +35,11 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Local secrets
+.env
+**/.env
+
+# Local API response artifacts
+login_response.json
+signup_response.json
